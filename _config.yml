@@ -2,7 +2,6 @@
 
 name: Ross Kippenbrock
 
-# Short bio or description (displayed in the header)
 description: Software Engineer in Brooklyn, NY
 
 avatar: https://avatars1.githubusercontent.com/u/5350074?v=2&s=460
@@ -24,14 +23,13 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:title
 
-# Set the Sass partials directory, as we're using @imports
 sass:
   sass_dir: _scss
-  style: :expanded # You might prefer to minify using :compressed
+  style: :expanded
 
-# Use the following plug-ins
+# plug-ins
 gems:
-  - jemoji # Emoji please!
+  - jemoji
 
 
 ### Build settings
