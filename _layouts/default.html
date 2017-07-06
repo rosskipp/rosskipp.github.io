@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    <meta name="author" content="{{ site.name }}" />
+    <meta name="description" content="{{ site.description }}">
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/static/css/semantic.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/static/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/static/css/main.css" />
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="{{ site.baseurl }}/static/javascript/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/static/javascript/semantic.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/static/javascript/site.js"></script>
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
+
+          <nav>
+            <a href="{{ site.baseurl }}/"><b>BLOG</b></a>
+            <a href="{{ site.baseurl }}/about.html"><b>ABOUT</b></a>
+            <a href="{{ site.baseurl }}/static/pdf/Ross Kippenbrock Resume.pdf"><b>RESUME</b></a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include social.html %}
+        </footer>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+  </body>
+</html>
