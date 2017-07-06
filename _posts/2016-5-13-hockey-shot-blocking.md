@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Shot Blocking in the NHL Playoffs"
+subtitle: "How I analyzed NHL data with Selenium, BeautifulSoup, Pandas and Plotly"
 published: true
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Finding Lane Lines at PyData Berlin"
+subtitle: "I spoke at PyData Berlin"
 published: true
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Grouping in Pandas"
+subtitle: "An introduction to grouping in pandas using NYC Citi Bike data"
 published: true
 ---
 
